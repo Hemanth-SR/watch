@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://i.ytimg.com data:; frame-src https://www.youtube-nocookie.com; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0b">
+<title>Hemanth SR | Watch</title>
+<meta name="description" content="Hemanth SR's videos and the best outliers from the builders, in one place. Plays through YouTube's official player.">
+<link rel="preconnect" href="https://i.ytimg.com">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="bar" id="bar">
+  <a class="brand" href="#top" id="brand" aria-label="Hemanth SR, home">
+    <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.6v16.8a1 1 0 0 0 1.5.9l14-8.4a1 1 0 0 0 0-1.8L8.5 2.7A1 1 0 0 0 7 3.6z" fill="currentColor"/></svg>
+    <span>HEMANTH SR</span>
+  </a>
+  <nav class="links" aria-label="Browse">
+    <a href="#top" data-go="top">Home</a>
+    <a href="#row-claude" data-go="row-claude">Builds</a>
+    <a href="#row-shorts" data-go="row-shorts">Shorts</a>
+    <a href="#row-cc" data-go="row-cc">From the builders</a>
+  </nav>
+  <div class="bar-right">
+    <button class="icon-btn" id="searchBtn" type="button" aria-label="Search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <a class="sub" href="https://www.youtube.com/@hemanth.sr5?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Subscribe</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="hero" aria-label="Featured">
+    <div class="hero-media">
+      <img class="hero-img" id="heroImg" alt="" fetchpriority="high">
+      <div class="hero-video" id="heroVideo"></div>
+    </div>
+    <div class="hero-shade"></div>
+    <button class="mute" id="heroMute" type="button" hidden aria-label="Unmute"></button>
+    <div class="hero-copy" id="heroCopy">
+      <p class="kicker">HEMANTH SR ORIGINAL</p>
+      <h1 id="heroTitle"></h1>
+      <p class="hero-meta" id="heroMeta"></p>
+      <p class="hero-blurb" id="heroBlurb"></p>
+      <div class="btns">
+        <button class="btn btn-play" id="heroPlay" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z" fill="currentColor"/></svg>Play</button>
+        <button class="btn btn-info" id="heroInfo" type="button"><span class="i" aria-hidden="true">i</span>More info</button>
+      </div>
+    </div>
+    <div class="dots" id="heroDots" role="tablist" aria-label="Featured videos"></div>
+  </section>
+  <div class="rows" id="rows"></div>
+</main>
+
+<footer class="foot" id="foot">
+  <p>Videos play through YouTube's official player and belong to their creators. Outlier figures = views divided by that channel's median, from a scan on 4 Nov 2026.</p>
+  <p><a href="https://www.youtube.com/@hemanth.sr5" target="_blank" rel="noopener noreferrer">youtube.com/@hemanth.sr5</a></p>
+</footer>
+
+<div id="hoverLayer" class="hover-layer"></div>
+<div class="overlay" id="overlay" hidden></div>
+
+<script src="catalog.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
